@@ -1,0 +1,82 @@
+.ui.container h1 {
+	display: inline-block;
+	background-color: red;
+	color: #ffffff;
+	padding: 0.1em 0.6em;
+	border: 1px solid red;
+	border-radius: 5px;
+	margin-bottom: 0;
+}
+.ui.comments {
+	margin-top: 1em;
+}
+
+.ui.comments .comment .metadata {
+	color: rgba(0, 0, 0, 0.5);
+}
+.ui.comments h5 {
+	display: inline;
+}
+.ui.comments .metadata .date {
+	font-size: 1.02em;
+}
+.video-item {
+	display: flex !important;
+	align-items: center !important;
+	cursor: pointer;
+}
+
+.video-item.item img {
+	width: 180px;
+}
+
+.ui.input {
+	width: 100%;
+}
+
+.ui.input > input {
+	font-size: 1.15em;
+}
+
+.ui.search .prompt {
+	border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+	.ui.grid > .row {
+		flex-direction: column;
+	}
+	.ui.column.grid > [class*="eleven wide"].column,
+	.ui.grid > .column.row > [class*="eleven wide"].column,
+	.ui.grid > .row > [class*="eleven wide"].column,
+	.ui.grid > [class*="eleven wide"].column {
+		width: 100% !important;
+	}
+	.ui.column.grid > [class*="five wide"].column,
+	.ui.grid > .column.row > [class*="five wide"].column,
+	.ui.grid > .row > [class*="five wide"].column,
+	.ui.grid > [class*="five wide"].column {
+		width: 100% !important;
+		margin-top: 1.5em;
+	}
+
+	.video-item.item img {
+		width: 350px;
+	}
+}
+
+@media (max-width: 600px) {
+	.video-item {
+		flex-direction: column;
+	}
+	.video-item.item img {
+		width: 100%;
+	}
+
+	.video-item.item .content {
+		padding: 1em 0 !important;
+	}
+	.header {
+		font-size: 1.1em;
+	}
+}
